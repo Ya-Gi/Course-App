@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import CourseForm from "./component/CourseForm";
+import CourseList from "./component/CourseList";
+import CourseSearch from "./component/CourseSearch";
+import CourseValue from "./component/CourseValue";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container is-fluid">
+      <CourseForm/>
+      <CourseList/>
+      <CourseSearch/>
+      <CourseValue/>
     </div>
   );
 }
